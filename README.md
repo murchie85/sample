@@ -47,3 +47,17 @@ Run this code in Jenkins to be sure it works.
 
 Ok, this is good, but your variable is still a massive string even though it looks like Json, it isn't Json, its just a string. So lets convert it using the powershell special command (other langauges have a similar command).
 
+__ADD__ these three lines
+
+```
+$jsonOutput = ConvertFrom-Json -InputObject $output
+
+Write-Host $jsonOutput.id
+Write-Host $jsonOutput.price_gbp
+
+```
+
+Run your code to make sure it works.
+
+Yo
+
