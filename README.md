@@ -23,3 +23,5 @@ This clock timing is a bit confusing, but you can always google the time convers
 ```
 
 Apply and save and now the job will tell you the next time it will run under the box where you just inserted the timecode. 
+
+Your Jenkins job will now run every hour.
