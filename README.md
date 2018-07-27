@@ -59,5 +59,15 @@ Write-Host $jsonOutput.price_gbp
 
 Run your code to make sure it works.
 
-Yo
+# FORMATTING JSON
 
+So now we can ouptut the selected id and price, but they are in two piles, lets get them displaying side by side.
+
+```
+for($x=1; $x -le 10; $x++){Write-Host $jsonOutput.id[$x] $jsonOutput.price_gbp[$x]}
+```
+
+
+Now you should get the jist of how to work with JSON data, powershell and jenkins. This can be really powerful, the next steps would be saving other features of the output such as BTC value to a variable and then producing a HTML report, that can be viewed online. Eventually having your jenkins job upload the report to your website, so you have an up to date price index. 
+
+__MORE TO COME IN THE FUTURE__
